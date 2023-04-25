@@ -12,10 +12,15 @@
 
 ##添加用户
 `sudo adduser [username]`
+
 `sudo usermod -a -G adm,cdrom,sudo,dip,plugdev,lpadmin,lxd,sambashare,docker [username]`
+
 `su [username]`
+
 `echo 'export PATH=$PATH:/usr/local/cuda-12.1/bin' >> ~/.bashrc`
+
 `echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.1/lib64' >> ~/.bashrc`
+
 
 ## docker的简单使用
 - 创建容器
