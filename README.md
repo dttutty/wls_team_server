@@ -10,7 +10,7 @@
 |5|172.24.91.3|3090✖1，P102-10G✖5|E5-2680v4✖2|64G✖2|16T HDD|
 |6|172.24.?.?|P102-10G✖6|E5-2683v3✖2|32G✖3，8G✖4|4T HDD|
 
-##添加用户
+ ##添加用户
 `sudo adduser [username]`
 
 `sudo usermod -a -G adm,cdrom,sudo,dip,plugdev,lpadmin,lxd,sambashare,docker [username]`
