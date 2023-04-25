@@ -8,7 +8,14 @@
 |3|172.24.34.140|P102-10G✖6|E5-2680v4✖2|32G✖4|8T HDD|
 |4|172.24.162.214|3090✖1，P102-10G✖5|E5-2680v4✖2|64G✖2|8T HDD|
 |5|172.24.91.3|3090✖1，P102-10G✖5|E5-2680v4✖2|64G✖2|16T HDD|
-|6|172.24.?.?|3090✖1，P102-10G✖5|E5-2683v3✖2|32G✖3，16G✖2|4T HDD|
+|6|172.24.?.?|3090✖1，P102-10G✖5|E5-2683v3✖2|32G✖3，8G✖4|4T HDD|
+
+##添加用户
+sudo adduser [username]
+sudo usermod -a -G adm,cdrom,sudo,dip,plugdev,lpadmin,lxd,sambashare,docker [username]
+su [username]
+echo 'export PATH=$PATH:/usr/local/cuda-12.1/bin' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.1/lib64' >> ~/.bashrc
 
 ## docker的简单使用
 - 创建容器
