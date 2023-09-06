@@ -9,13 +9,13 @@
 这时候可以如果有一个usb网卡适配器(我的文件柜里面有一个powersync的，可以免驱)，就可以比较方便的去查看新ip地址。
 1、先把usb网卡适配器插入校园网网线再插到自己的windows电脑上，这时候打开cmd看一下ipconfig
 
-`Ethernet adapter Ethernet 5:
+```Ethernet adapter Ethernet 5:
 
    Connection-specific DNS Suffix  . :
    Link-local IPv6 Address . . . . . : fe80::1088:d86e:4279:ad1d%10
    IPv4 Address. . . . . . . . . . . : 172.29.35.42
    Subnet Mask . . . . . . . . . . . : 255.255.0.0
-   Default Gateway . . . . . . . . . : 172.29.255.254`
+   Default Gateway . . . . . . . . . : 172.29.255.254```
 
 这里我们看到学校给我们这个网卡分配的ip是172.29.35.42
 2、把该usb网卡适配器插服务器上，通过ssh到172.29.35.42上，用ip address命令查看服务器集成网卡的ip
