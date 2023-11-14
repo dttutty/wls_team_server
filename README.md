@@ -65,7 +65,7 @@ IP:172.24.239.247
 `sudo docker cp 容器名:文件路径 主机文件/夹路径`
 - 从主机复制复制到容器
 `sudo docker cp 主机文件/夹路径 容器名:文件路径`
-`export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890` 使用我设置的代理
+- 使用我设置的代理 `export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890` 
 
 ## 常用命令
 - 查看GPU实时更新
