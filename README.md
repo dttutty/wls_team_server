@@ -85,6 +85,7 @@ IP:172.24.239.247
 
 ## 显卡掉了怎么办
 我们服务器有时候会出现这种情况
+
 `(base) zhaolei@wls-team-server5:~$ nvidia-smi`
 `NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.`
 
