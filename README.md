@@ -90,7 +90,7 @@ IP:172.24.239.247
 
 `NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.`
 
-我们去[nvidia官网](https://www.nvidia.com/download/index.aspx)下载最新（之所以要最新，是因为我们的服务器经常更新Kernel）的Linux-X64,3090的驱动，比如NVIDIA-Linux-x86_64-550.78.run，安装步骤
+我们去[nvidia官网](https://www.nvidia.com/download/index.aspx)下载最新（之所以要最新，是因为我们的服务器经常自动更新Kernel，最新的驱动才能支持最新的Kernel）的Linux-X64,3090的驱动，比如NVIDIA-Linux-x86_64-550.78.run，安装步骤
 - 安装之前要`sudo service lightdm stop`关闭图形化界面
 - 安装：`sudo bash NVIDIA-Linux-x86_64-550.78.run`
 - 安装之后要`sudo service lightdm start`打开图形化界面
