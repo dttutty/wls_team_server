@@ -1,8 +1,29 @@
-# Windows服务器
-用来存放数据集、下载东西（里面有百度网盘年费vip）和打印文件，账号密码可以从我要
-存放在该服务器D盘datasets目录下的所有东西，都可以通过linux服务器的/datasets目录访问
 
-IP:172.24.239.247
+
+# 深度学习服务器IP
+
+均配备多块显卡，用来深度学习，内网穿透地址可以找我要
+|id|内网ip（点进去可以查看gpu状态）|显卡|CPU|内存条|硬盘|内网穿透端口|
+|--|--|--|--|--|--|--|
+|1|172.24.200.207|3090x1，P102-10Gx4|E5-2698v3x2|64Gx4|1T SSD,16T HDD|5222|
+|2|172.24.26.53|3090x1，P102-10Gx4|E5-2680v4x2|32Gx4|8T HDD|5223|
+|3|172.24.34.140|3090x1，P102-10Gx4|E5-2680v4x2|32Gx4|8T HDD|5224|
+|4|172.24.129.17|3090x1，P102-10Gx4|E5-2680v4x2|64Gx2|8T HDD|5225|
+|5|172.24.222.248|3090x1，P102-10Gx4|E5-2680v4x2|64Gx2|16T HDD|5226|
+|6|172.24.33.102|P102-10Gx6|E5-2683v3x2|32Gx4|4T HDD|5227,暂时不可用|
+
+## 添加用户
+ 
+`sudo adduser [username]`
+
+`sudo usermod -a -G adm,cdrom,sudo,dip,plugdev,lpadmin,lxd,sambashare,docker [username]`
+
+`su [username]`
+
+`echo 'export PATH=$PATH:/usr/local/cuda-12.1/bin' >> ~/.bashrc`
+
+`echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.1/lib64' >> ~/.bashrc`
+
 
 # 断网处理
 有时候因为学校停电等原因，服务器断网超过24小时会导致需要网卡IP地址变更（使用以前的IP无法访问服务器）
@@ -35,31 +56,6 @@ IP:172.24.239.247
 
 3、拔掉该网卡适配器，通过X2GO登录上面看到的集成网卡的ip，再打开firefox，打开校园网认证url，`http://192.168.167.14/srun_portal_pc`认证之后就可以恢复上网（内网ip变成新的内网ip，内网穿透ip和端口不变）。
 </strike>
-
-
-# Linux服务器
-
-均配备多块显卡，用来深度学习，内网穿透地址可以找我要
-|id|内网ip（点进去可以查看gpu状态）|显卡|CPU|内存条|硬盘|内网穿透端口|
-|--|--|--|--|--|--|--|
-|1|172.24.200.207|3090x1，P102-10Gx4|E5-2698v3x2|64Gx4|1T SSD,16T HDD|5222|
-|2|172.24.26.53|3090x1，P102-10Gx4|E5-2680v4x2|32Gx4|8T HDD|5223|
-|3|172.24.34.140|3090x1，P102-10Gx4|E5-2680v4x2|32Gx4|8T HDD|5224|
-|4|172.24.129.17|3090x1，P102-10Gx4|E5-2680v4x2|64Gx2|8T HDD|5225|
-|5|172.24.222.248|3090x1，P102-10Gx4|E5-2680v4x2|64Gx2|16T HDD|5226|
-|6|172.24.33.102|P102-10Gx6|E5-2683v3x2|32Gx4|4T HDD|5227,暂时不可用|
-
-## 添加用户
- 
-`sudo adduser [username]`
-
-`sudo usermod -a -G adm,cdrom,sudo,dip,plugdev,lpadmin,lxd,sambashare,docker [username]`
-
-`su [username]`
-
-`echo 'export PATH=$PATH:/usr/local/cuda-12.1/bin' >> ~/.bashrc`
-
-`echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.1/lib64' >> ~/.bashrc`
 
 
 ## docker的简单使用
