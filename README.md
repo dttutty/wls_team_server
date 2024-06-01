@@ -84,7 +84,7 @@
 - 查看进程
 `ps -ef`
 - 杀死某个pid的进程
-`kill -9 pid`
+`sudo kill -9 [pid]`
 - 查看资源图形界面
 `alt`+`F2` `gnome-system-monitor`
 - 赋予xxx文件夹所有权限
