@@ -24,6 +24,9 @@
 
 `echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.1/lib64' >> ~/.bashrc`
 
+# 删除用户
+
+`deluser -r [username]`
 
 # 断网处理
 有时候因为学校停电等原因，服务器断网超过24小时会导致需要网卡IP地址变更（使用以前的IP无法访问服务器）
