@@ -75,6 +75,7 @@
 - 从主机复制复制到容器
 `sudo docker cp 主机文件/夹路径 容器名:文件路径`
 - 使用我设置的代理 `export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890` 
+- 取消使用代理 `unset https_proxy` `unset http_proxy` `unset all_proxy` 
 
 ## 常用命令
 - 查看GPU实时更新
