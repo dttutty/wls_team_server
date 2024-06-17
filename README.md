@@ -61,7 +61,7 @@
 </strike>
 
 ## 远程桌面连接
-自己电脑下载X2GO,新建连接时候注意session type选择XFCE（因为我给服务器装的都是轻量化的Xubuntu系统，默认XFCE桌面）
+自己电脑下载[X2GO](https://wiki.x2go.org/doku.php),新建连接时候注意session type选择XFCE（因为我给服务器装的都是轻量化的Xubuntu系统，默认XFCE桌面）
 
 如果去校内的维修店给你装Ubuntu，默认就是KDE桌面
 
