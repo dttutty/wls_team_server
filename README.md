@@ -25,7 +25,7 @@
 
 # 删除用户
 
-`sudo deluser match --remove-home`
+`sudo deluser 用户名 --remove-home`
 
 # 断网处理
 有时候因为学校停电等原因，服务器断网超过24小时会导致需要网卡IP地址变更（使用以前的IP无法访问服务器）
