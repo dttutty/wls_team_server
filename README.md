@@ -73,6 +73,10 @@
 [看这里](https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container)
 - 查看运行的容器
 `docker ps`
+- 重启docker的ssh服务，需要先进docker
+`vi /etc/ssh/sshd_config`
+修改`PermitRootLogin`为`yes`
+ `service ssh start`
 - 从容器复制到主机
 `sudo docker cp 容器名:文件路径 主机文件/夹路径`
 - 从主机复制复制到容器
